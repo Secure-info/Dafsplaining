@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Dafsplaining: Daily Weekday Daf Yomi Shiur at BJSZ in Baltimore. Join us at 5:35 AM or listen on Apple Podcasts and Spotify." />
   <meta name="keywords" content="Daf Yomi, Dafsplaining, podcast, Jewish learning, shiur, Baltimore" />
   <meta property="og:title" content="Dafsplaining - Daily Weekday Daf Shiur" />
@@ -12,57 +12,93 @@
   <title>Dafsplaining - Daily Weekday Daf Shiur</title>
   <link rel="icon" type="image/png" href="https://secure-info.github.io/Dafsplaining/images/favicon.png" />
   <link rel="stylesheet" href="https://secure-info.github.io/Dafsplaining/styles.css" />
+  <style>
+    /* Minimal fallback styles in case styles.css fails */
+    body {
+      font-family: sans-serif;
+      background: #f3f4f6;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    main {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+    .buttons {
+      margin: 1.5rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons a {
+      display: inline-flex;
+      padding: 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      align-items: center;
+      justify-content: center;
+    }
+    .buttons a:hover {
+      transform: scale(1.05);
+    }
+    .apple {
+      background: black;
+    }
+    .spotify {
+      background: #1DB954;
+    }
+    a.email-link {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
-  <main id="content" class="min-h-screen flex flex-col items-center justify-center p-6">
-    <section class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8">
-      <div class="flex justify-center mb-6">
-        <a href="https://secure-info.github.io/Dafsplaining/" aria-label="Dafsplaining Homepage">
-          <img id="logo"
-               src="https://secure-info.github.io/Dafsplaining/images/Dafsplaining%20PodcastLogo.png"
-               alt="Dafsplaining Podcast Logo"
-               class="h-24 w-24 rounded-lg object-cover" />
-        </a>
-      </div>
-      <h1 class="text-4xl font-bold text-center mb-4">Dafsplaining</h1>
-      <h2 class="text-2xl text-center text-gray-600 mb-6">Daily Weekday Daf Shiur</h2>
-      <p class="text-lg text-center mb-4">
-        Join us at <strong>BJSZ in Baltimore</strong> at <strong>5:35 AM</strong> for the Daf Yomi shiur,
-        <em>leilui nishmas</em> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.
-        He always pushed us to learn more and would be astonished by our consistency.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
-        <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Listen to Dafsplaining on Apple Podcasts"
-           class="flex items-center bg-black rounded-lg p-2 hover:bg-gray-800 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="https://secure-info.github.io/Dafsplaining/applepodcastlogo.png"
-               alt="Apple Podcasts Logo"
-               class="h-8 w-8" />
-        </a>
-        <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Listen to Dafsplaining on Spotify"
-           class="flex items-center bg-green-600 rounded-lg p-2 hover:bg-green-500 transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-          <img src="https://secure-info.github.io/Dafsplaining/spotifylogo.png"
-               alt="Spotify Logo"
-               class="h-8 w-8" />
-        </a>
-      </div>
-      <p class="text-center text-lg mb-4">
-        Contact us at <a href="mailto:dafsplaining@gmail.com" class="text-blue-600 hover:underline">dafsplaining@gmail.com</a>
-      </p>
-    </section>
-    <footer class="mt-8 text-sm text-gray-500 text-center">
+<body>
+  <main>
+    <a href="https://secure-info.github.io/Dafsplaining/" aria-label="Dafsplaining Homepage">
+      <img src="https://secure-info.github.io/Dafsplaining/images/Dafsplaining%20PodcastLogo.png" alt="Dafsplaining Podcast Logo" style="height: 96px; width: 96px; margin-bottom: 1rem;" />
+    </a>
+    <h1>Dafsplaining</h1>
+    <h2>Daily Weekday Daf Shiur</h2>
+    <p>
+      Join us at <strong>BJSZ in Baltimore</strong> at <strong>5:35 AM</strong> for the Daf Yomi shiur,
+      <em>leilui nishmas</em> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.<br />
+      He always pushed us to learn more and would be astonished by our consistency.
+    </p>
+    <div class="buttons">
+      <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874" target="_blank" rel="noopener noreferrer" aria-label="Listen to Dafsplaining on Apple Podcasts" class="apple">
+        <img src="https://secure-info.github.io/Dafsplaining/applepodcastlogo.png" alt="Apple Podcasts Logo" style="height: 32px; width: 32px;" />
+      </a>
+      <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1" target="_blank" rel="noopener noreferrer" aria-label="Listen to Dafsplaining on Spotify" class="spotify">
+        <img src="https://secure-info.github.io/Dafsplaining/spotifylogo.png" alt="Spotify Logo" style="height: 32px; width: 32px;" />
+      </a>
+    </div>
+    <p>Contact us at <a href="mailto:dafsplaining@gmail.com" class="email-link">dafsplaining@gmail.com</a></p>
+    <footer style="font-size: 0.8rem; color: #666; margin-top: 2rem;">
       © <span id="year"></span> Dafsplaining. All rights reserved.
     </footer>
   </main>
   <script>
-    // Set dynamic year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
